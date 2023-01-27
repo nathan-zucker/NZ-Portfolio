@@ -123,12 +123,12 @@ Array(200).fill().forEach(addStar)
 
 //BACKGROUND
 
-const spaceTexture = new THREE.TextureLoader(loadingManager).load('blue-nebula.jpg');
+const spaceTexture = new THREE.TextureLoader(loadingManager).load('./blue-nebula.jpg');
 
 
 //CENTERPIECE
 
-const catTexture = new THREE.TextureLoader(loadingManager).load("cat-img.jpg");
+const catTexture = new THREE.TextureLoader(loadingManager).load("./cat-img.jpg");
 const cat = new THREE.Mesh(
   new THREE.BoxGeometry(4, 4, 4),
   new THREE.MeshBasicMaterial( { map: catTexture } )
@@ -137,8 +137,8 @@ const cat = new THREE.Mesh(
 
 //CREATE MOON
 
-const moonTexture = new THREE.TextureLoader(loadingManager).load('moon.jpg');
-const moonNormal = new THREE.TextureLoader(loadingManager).load('moon-normal.jpg');
+const moonTexture = new THREE.TextureLoader(loadingManager).load('./moon.jpg');
+const moonNormal = new THREE.TextureLoader(loadingManager).load('./moon-normal.jpg');
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
